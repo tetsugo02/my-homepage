@@ -9,6 +9,10 @@ const HomeContainer = () => {
 			<NameArea />
 			<ArticleBlock title="About Me" content={airticleData.aboutMe} />
 			<ArticleBlock title="Bio" content={<ItemList data={airticleData.Bio}></ItemList>} />
+			<ArticleBlock
+				title="Certification"
+				content={<ItemList data={airticleData.Certifications}></ItemList>}
+			/>
 		</div>
 	);
 };
