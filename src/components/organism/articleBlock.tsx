@@ -8,9 +8,9 @@ interface ArticleBlockProps {
 const ArticleBlock = (props: ArticleBlockProps) => {
 	return (
 		<div>
-			<article>
-				<h2 className="text-2xl font-bold">{props.title}</h2>
-				<p className="text-lg">{props.content}</p>
+			<article className="text-white flow-root m-2 mt-5">
+				<h2 className="text-2xl font-bold underline">{props.title}</h2>
+				<p className="text-lg indent-4">{props.content}</p>
 			</article>
 		</div>
 	);

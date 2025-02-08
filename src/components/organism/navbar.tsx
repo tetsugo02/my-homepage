@@ -1,5 +1,4 @@
 import NavbarButton from "../atom/navbarButton";
-
 const Navbar = () => {
 	return (
 		<div className="fixed top-0 z-50 justify-items-center w-full">
