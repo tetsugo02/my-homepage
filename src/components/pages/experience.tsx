@@ -2,10 +2,11 @@ import NameArea from "../organism/nameArea";
 import ArticleBlock from "../organism/articleBlock";
 import * as airticleData from "../../assets/articles.json";
 import ItemList from "../organism/itemList";
+import PageContainer from "../organism/pageContainer";
 
-const HomeContainer = () => {
+const Experience = () => {
 	return (
-		<div className="container mx-auto px-4 py-20 max-w-3xl rounded-lg ">
+		<PageContainer>
 			<NameArea />
 			<ArticleBlock title="About Me" content={airticleData.aboutMe} />
 			<ArticleBlock title="Bio" content={<ItemList data={airticleData.Bio}></ItemList>} />
@@ -13,8 +14,8 @@ const HomeContainer = () => {
 				title="Certification"
 				content={<ItemList data={airticleData.Certifications}></ItemList>}
 			/>
-		</div>
+		</PageContainer>
 	);
 };
 
-export default HomeContainer;
+export default Experience;

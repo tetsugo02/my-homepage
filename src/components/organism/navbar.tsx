@@ -6,7 +6,7 @@ const Navbar = () => {
 			<div className="absolute inset-0 opacity-10" />
 			<div className="relative z-[60] grid grid-cols-5 max-w-3xl mt-2 mx-auto justify-items-center">
 				<NavbarButton isBold={true} onClick={() => console.log("Hello World")}>
-					Tesugo To
+					Home
 				</NavbarButton>
 				<NavbarButton onClick={() => console.log("Hello World")}>Works</NavbarButton>
 				<NavbarButton onClick={() => console.log("Hello World")}>Expirence</NavbarButton>

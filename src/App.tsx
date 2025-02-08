@@ -1,12 +1,12 @@
-import Navbar from "./components/organism/navbar"
+import Navbar from "./components/organism/navbar";
 import Background from "./components/pages/background";
-import HomeContainer from "./components/pages/homeContainer";
+import Experience from "./components/pages/experience";
 const App = () => {
 	return (
 		<div>
 			<Background>
 				<Navbar />
-				<HomeContainer />
+				<Experience />
 			</Background>
 		</div>
 	);
