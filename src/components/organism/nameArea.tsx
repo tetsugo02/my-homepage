@@ -8,7 +8,7 @@ function NameArea() {
 				<h2 className="font-normal text-xl ml-2">University Student</h2>
 			</div>
 			<div className="flex justify-end mr-5">
-				<Avatar src="/avatar.JPG"></Avatar>
+				<Avatar src="/my-homepage/avatar.JPG"></Avatar>
 			</div>
 		</div>
 	);
