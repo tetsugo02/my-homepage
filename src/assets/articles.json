@@ -1,0 +1,13 @@
+{
+	"aboutMe": "Hi, I’m Tetsugo To (董哲豪), a third-year Electrical Engineering (EE) student with a strong passion for Computer Science. I enjoy solving technical challenges and exploring how software and hardware interact to create innovative solutions. Specifically, I am interested in Robotics, Machine Learning, and software development.",
+	"Bio": [
+		["2002", "Born in Xian, China"],
+		["2016", "Moved to Japan"],
+		["2019", "Entered the Keio Shiki High School"],
+		["2022", "Entered the Keio University"]
+	],
+	"Certifications": [
+		["2024", "Fundamental Information Technology Engineer Examination"],
+		["2024", "Image Processing Certification Test"]
+	]
+}

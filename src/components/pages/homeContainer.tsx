@@ -1,14 +1,14 @@
 import NameArea from "../organism/nameArea";
 import ArticleBlock from "../organism/articleBlock";
+import * as airticleData from "../../assets/articles.json";
+import ItemList from "../organism/itemList";
 
 const HomeContainer = () => {
 	return (
-		<div className="container mx-auto px-4 py-20 max-w-3xl rounded-lg justify-items-center ">
+		<div className="container mx-auto px-4 py-20 max-w-3xl rounded-lg ">
 			<NameArea />
-			<ArticleBlock
-				title="Works"
-				content="I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript.I'm a web developer. I'm currently learning React and TypeScript."
-			/>
+			<ArticleBlock title="About Me" content={airticleData.aboutMe} />
+			<ArticleBlock title="Bio" content={<ItemList data={airticleData.Bio}></ItemList>} />
 		</div>
 	);
 };
