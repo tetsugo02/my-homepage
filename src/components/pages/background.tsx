@@ -6,7 +6,9 @@ interface backgroundProps {
 
 const Background = (props: backgroundProps) => {
 	return (
-		<div className="min-h-screen w-full bg-gray-800 justify-items-center">{props.children}</div>
+		<div className="min-h-screen w-full h-full bg-gray-800 justify-items-center">
+			{props.children}
+		</div>
 	);
 };
 
