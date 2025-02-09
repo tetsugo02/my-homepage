@@ -1,6 +1,8 @@
 import NavbarButton from "../atom/navbarButton";
 import TranslateIcon from "@mui/icons-material/Translate";
 import { NavLink } from "react-router";
+import DropDownMenu from "../atom/dropDownMenu";
+
 const Navbar = () => {
 	return (
 		<div className="fixed top-0 z-50 justify-items-center w-full hidden sm:block">
@@ -17,7 +19,13 @@ const Navbar = () => {
 				<NavLink to="/experience">
 					<NavbarButton onClick={() => console.log("Hello World")}>Expirence</NavbarButton>
 				</NavLink>
-				<NavbarButton onClick={() => console.log("Hello World")}>Links</NavbarButton>
+				<DropDownMenu
+					button={<NavbarButton>Links</NavbarButton>}
+					items={[
+						{ label: "Edit", onClick: () => console.log("Edit clicked") },
+						{ label: "Delete", onClick: () => console.log("Delete clicked") },
+					]}
+				/>
 				<NavbarButton onClick={() => console.log("Hello World")}>
 					<div className="">
 						<TranslateIcon />

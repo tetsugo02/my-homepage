@@ -1,6 +1,6 @@
 import PageContainer from "../organism/pageContainer";
 import NameArea from "../organism/nameArea";
-import ArticleBlock from "../organism/articleBlock";
+import ArticleBlock from "../atom/articleBlock";
 import * as airticleData from "../../assets/articles.json";
 const Home = () => {
 	return (

@@ -1,5 +1,5 @@
 import PageContainer from "../organism/pageContainer";
-import ArticleBlock from "../organism/articleBlock";
+import ArticleBlock from "../atom/articleBlock";
 const Works = () => {
 	return (
 		<div>
