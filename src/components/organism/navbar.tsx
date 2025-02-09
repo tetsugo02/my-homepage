@@ -1,7 +1,7 @@
 import NavbarButton from "../atom/navbarButton";
 import TranslateIcon from "@mui/icons-material/Translate";
 import { NavLink } from "react-router";
-import DropDownMenu from "../atom/dropDownMenu";
+import NavbarLinks from "./navbarLinks";
 
 const Navbar = () => {
 	return (
@@ -19,13 +19,7 @@ const Navbar = () => {
 				<NavLink to="/experience">
 					<NavbarButton onClick={() => console.log("Hello World")}>Expirence</NavbarButton>
 				</NavLink>
-				<DropDownMenu
-					button={<NavbarButton>Links</NavbarButton>}
-					items={[
-						{ label: "Edit", onClick: () => console.log("Edit clicked") },
-						{ label: "Delete", onClick: () => console.log("Delete clicked") },
-					]}
-				/>
+				<NavbarLinks />
 				<NavbarButton onClick={() => console.log("Hello World")}>
 					<div className="">
 						<TranslateIcon />
