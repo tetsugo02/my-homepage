@@ -13,10 +13,7 @@ const TranslateDropDownMenu = () => {
 						</div>
 					</NavbarButton>
 				}
-				items={[
-					{ label: "日本語", type: "button", onClick: () => console.log("日本語") },
-					{ label: "English", type: "button", onClick: () => console.log("English") },
-				]}
+				items={[{ contents: <a>日本語</a> }, { contents: <a>English</a> }]}
 			/>
 		</div>
 	);

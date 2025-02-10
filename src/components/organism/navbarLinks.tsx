@@ -1,6 +1,6 @@
 import DropDownMenu from "../atom/dropDownMenu";
 import NavbarButton from "../atom/navbarButton";
-
+import Avatar from "../atom/avatar";
 const NavbarLinks = () => {
 	return (
 		<div>
@@ -8,18 +8,23 @@ const NavbarLinks = () => {
 				button={<NavbarButton>Links</NavbarButton>}
 				items={[
 					{
-						label: "Github",
-						type: "a",
-						onClick: () => console.log("Github"),
-						links: "https://github.com/tetsugo02",
-						avatar: "/GrommetIconsGithub.svg",
+						contents: (
+							<a href="https://github.com/tetsugo02" className="flex ">
+								<Avatar src="/GrommetIconsGithub.svg" size="small" />
+								<span className="ml-1">GitHub</span>
+							</a>
+						),
 					},
 					{
-						label: "Labtory",
-						type: "a",
-						onClick: () => console.log("laboratory"),
-						links: "https://murata-lab.jp/",
-						avatar: "https://api.iconify.design/ri:robot-2-line.svg?color=%23ababab",
+						contents: (
+							<a href="https://lab.github.com" className="flex">
+								<Avatar
+									src="https://api.iconify.design/ri:robot-2-line.svg?color=%23ababab"
+									size="small"
+								/>
+								<span className="ml-1">Lab</span>
+							</a>
+						),
 					},
 				]}
 			/>

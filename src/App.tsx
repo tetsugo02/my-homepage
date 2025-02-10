@@ -4,7 +4,7 @@ import Experience from "./components/pages/experience";
 import Works from "./components/pages/works";
 import Home from "./components/pages/home";
 import { BrowserRouter, Routes, Route } from "react-router";
-
+import MobileNavMenu from "./components/organism/mobileNavbarMenu";
 
 const App = () => {
 	return (
@@ -12,6 +12,7 @@ const App = () => {
 			<BrowserRouter>
 				<Background>
 					<Navbar />
+					<MobileNavMenu />
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/works" element={<Works />} />

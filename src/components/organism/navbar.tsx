@@ -2,7 +2,6 @@ import NavbarButton from "../atom/navbarButton";
 import { NavLink } from "react-router";
 import NavbarLinks from "./navbarLinks";
 import TranslateDropDownMenu from "./translateDropDownMenu";
-
 const Navbar = () => {
 	return (
 		<div className="fixed top-0 z-50 justify-items-center w-full hidden sm:block">
