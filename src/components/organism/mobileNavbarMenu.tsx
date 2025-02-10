@@ -1,8 +1,9 @@
 import DropDownMenu from "../atom/dropDownMenu";
 import NavbarButton from "../atom/navbarButton";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router"; // react-router に変更
 import TranslateDropDownMenu from "./translateDropDownMenu";
 import NavbarLinks from "./navbarLinks";
+
 const MobileNavMenu = () => {
 	return (
 		<div className="fixed top-4 right-4 sm:hidden flex gap-2">
@@ -35,22 +36,22 @@ const MobileNavMenu = () => {
 					items={[
 						{
 							contents: (
-								<NavLink to="/">
-									<NavbarButton isBold={true}>Home</NavbarButton>
+								<NavLink to="/" className={style.navButton}>
+									Home
 								</NavLink>
 							),
 						},
 						{
 							contents: (
-								<NavLink to="/works">
-									<NavbarButton>Works</NavbarButton>
+								<NavLink to="/works" className={style.navButton}>
+									Works
 								</NavLink>
 							),
 						},
 						{
 							contents: (
-								<NavLink to="/experience">
-									<NavbarButton>Experience</NavbarButton>
+								<NavLink to="/experience" className={style.navButton}>
+									Experience
 								</NavLink>
 							),
 						},
@@ -59,6 +60,10 @@ const MobileNavMenu = () => {
 			</div>
 		</div>
 	);
+};
+
+const style = {
+	navButton: "block w-full px-2 py-1 hover:bg-gray-700 rounded-lg",
 };
 
 export default MobileNavMenu;

@@ -1,9 +1,13 @@
 import Avatar from "../atom/avatar";
 
+const style = {
+	a: "flex items-center w-full px-2 py-1 hover:bg-gray-700 rounded-lg",
+};
+
 const linksItems = [
 	{
 		contents: (
-			<a href="https://github.com/tetsugo02" className="flex ">
+			<a href="https://github.com/tetsugo02" className={style.a}>
 				<Avatar src="/GrommetIconsGithub.svg" size="small" />
 				<span className="ml-1">GitHub</span>
 			</a>
@@ -11,7 +15,7 @@ const linksItems = [
 	},
 	{
 		contents: (
-			<a href="https://lab.github.com" className="flex">
+			<a href="https://lab.github.com" className={style.a}>
 				<Avatar src="https://api.iconify.design/ri:robot-2-line.svg?color=%23ababab" size="small" />
 				<span className="ml-1">Lab</span>
 			</a>
