@@ -8,12 +8,25 @@ const TranslateDropDownMenu = () => {
 			<DropDownMenu
 				button={
 					<NavbarButton>
-						<div className="">
-							<TranslateIcon />
-						</div>
+						<TranslateIcon />
 					</NavbarButton>
 				}
-				items={[{ contents: <a>日本語</a> }, { contents: <a>English</a> }]}
+				items={[
+					{
+						contents: (
+							<a href="#" className="block w-full px-2 py-1 hover:bg-gray-700 rounded-lg">
+								日本語
+							</a>
+						),
+					},
+					{
+						contents: (
+							<a href="#" className="block w-full px-2 py-1 hover:bg-gray-700 rounded-lg">
+								English
+							</a>
+						),
+					},
+				]}
 			/>
 		</div>
 	);

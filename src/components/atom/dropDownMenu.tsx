@@ -16,14 +16,10 @@ const DropDownMenu = ({ button, items }: DropDownMenuProps) => {
 				<MenuItems
 					transition
 					anchor="bottom end"
-					className="w-40 origin-top-right rounded-xl border border-white bg-gray-800 p-1 text-sm text-white transition duration-100 ease-out focus:outline-none"
+					className="w-40 p-1 origin-top-right rounded-xl border border-white bg-gray-800  text-sm text-white transition duration-100 ease-out focus:outline-none"
 				>
 					{items.map((item, index) => (
-						<MenuItem key={index}>
-							<div className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 hover:bg-white/10">
-								{item.contents}
-							</div>
-						</MenuItem>
+						<MenuItem key={index}>{item.contents}</MenuItem>
 					))}
 				</MenuItems>
 			</Menu>
