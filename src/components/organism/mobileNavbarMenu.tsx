@@ -2,10 +2,13 @@ import DropDownMenu from "../atom/dropDownMenu";
 import NavbarButton from "../atom/navbarButton";
 import { NavLink } from "react-router";
 import TranslateDropDownMenu from "./translateDropDownMenu";
-
+import NavbarLinks from "./navbarLinks";
 const MobileNavMenu = () => {
 	return (
 		<div className="fixed top-4 right-4 sm:hidden flex gap-2">
+			<div>
+				<NavbarLinks />
+			</div>
 			<div>
 				<TranslateDropDownMenu />
 			</div>
