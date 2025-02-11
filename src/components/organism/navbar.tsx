@@ -14,7 +14,7 @@ const Navbar = () => {
 					<NavbarButton>Works</NavbarButton>
 				</NavLink>
 				<NavLink to="/experience">
-					<NavbarButton>Expirence</NavbarButton>
+					<NavbarButton>Experience</NavbarButton>
 				</NavLink>
 				<NavbarLinks />
 				<TranslateDropDownMenu />
