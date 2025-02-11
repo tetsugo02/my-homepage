@@ -7,7 +7,7 @@ const style = {
 const linksItems = [
 	{
 		contents: (
-			<a href="https://github.com/tetsugo02" className={style.a}>
+			<a href="https://github.com/tetsugo02" className={style.a} target="_blank">
 				<Avatar
 					src="https://api.iconify.design/grommet-icons:github.svg?color=%23ababab"
 					size="small"
@@ -18,7 +18,7 @@ const linksItems = [
 	},
 	{
 		contents: (
-			<a href="https://murata-lab.jp/" className={style.a}>
+			<a href="https://murata-lab.jp/" className={style.a} target="_blank">
 				<Avatar src="https://api.iconify.design/ri:robot-2-line.svg?color=%23ababab" size="small" />
 				<span className="ml-1">Lab</span>
 			</a>
