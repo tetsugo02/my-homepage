@@ -1,5 +1,5 @@
-import { atom } from "jotai";
+import { atomWithStorage } from "jotai/utils";
 
 export type Language = "en" | "ja";
 
-export const globalLanguageState = atom<Language>("en");
+export const globalLanguageState = atomWithStorage<Language>("globalLanguage", "en");
