@@ -9,12 +9,12 @@ const ItemList = (props: ItemListProps) => {
 	return (
 		<div>
 			<table className="table-auto mt-3 mb-3">
-				<tbody className=" list-disc">
+				<tbody>
 					{props.data.map((item, index) => {
 						return (
-							<tr key={index}>
-								<td className=" mr-2">{item[0]}</td>
-								<td className=" mx-5">{item[1]}</td>
+							<tr key={index} className="flex">
+								{item[0] ? <th className=" mr-3">{item[0]}</th> : null}
+								<td className="">{item[1]}</td>
 							</tr>
 						);
 					})}

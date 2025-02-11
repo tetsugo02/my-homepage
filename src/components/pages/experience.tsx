@@ -17,7 +17,7 @@ const Experience = () => {
 			<ArticleBlock title="Bio" content={<ItemList data={airticleData.Bio}></ItemList>} />
 			<ArticleBlock
 				title="Certification"
-				content={<ItemList data={airticleData_Eng.Certifications}></ItemList>}
+				content={<ItemList data={airticleData.Certifications}></ItemList>}
 			/>
 		</PageContainer>
 	);

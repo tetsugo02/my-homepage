@@ -17,7 +17,6 @@ const TranslateDropDownMenu = () => {
 					{
 						contents: (
 							<a
-								href="#"
 								className="block w-full px-2 py-1 hover:bg-gray-700 rounded-lg"
 								onClick={() => {
 									handleChangeLanguage("ja");
@@ -30,7 +29,6 @@ const TranslateDropDownMenu = () => {
 					{
 						contents: (
 							<a
-								href="#"
 								className="block w-full px-2 py-1 hover:bg-gray-700 rounded-lg"
 								onClick={() => {
 									handleChangeLanguage("en");
